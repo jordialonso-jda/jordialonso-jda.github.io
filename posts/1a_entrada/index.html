@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en-us">
-<title>Entrada del 2 de març | Blog de servidor de correu de Jordi Alonso</title>
+<title>Entrada del 2 de març | Servidor de Correu</title>
 <meta charset="utf-8">
 <meta name="generator" content="Hugo 0.74.3" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,26 +10,26 @@
 
 <header>
   
-    <a href="https://jordialonso-jda.github.io/" class="title">Blog de servidor de correu de Jordi Alonso</a>
+    <a href="https://jordialonso-jda.github.io/" class="title">Servidor de Correu</a>
   
   
 </header>
 
 <article>
   <header>
-    <h1>Entrada del 2 de març</h1>
+    <h2>Entrada del 2 de març</h2>
     <time datetime="2021-03-01T15:21:52&#43;01:00">March 01, 2021</time>
   </header>
-  <h1>-Fent proves-</h1>
+  <h1>Fent proves</h1>
 <p>Una manera molt ràpida de crear un servidor de correu és gràcies a poste.io.
 Aquesta web ens ofereix una demo per a fer proves i demés.
 Gràcies a aquesta demo som capaços de crear mails i fer diverses proves, encara que sigui de manera temporal :</p>
 <p><img src="/images/1acapt.png" alt="Cat"></p>
-<p>Veiem com és possible rebre missatges desde aquests comptes a el compte de l&rsquo;institut, per exemple</p>
+<p>Veiem com és possible rebre missatges desde aquests comptes a el compte de l&rsquo;institut, per exemple :</p>
 <p><img src="/images/2acapt.png" alt="Cat"></p>
 <p>Però a l&rsquo;hora de respondre, no deixa, ja que el domini creat no existeix :</p>
 <p><img src="/images/3acapt.png" alt="Cat"></p>
-<p>-Provem a INTE-</p>
+  <h1>Provem a INTE</h1>
 <ol>
 <li>Instal·lem Docker a inte</li>
 <li>Creem un volum, amb la comanda docker volume create. Exemple : docker volume create volum_mail_server</li>
@@ -48,7 +48,7 @@ En aquest cas només tenim el compte admin, però se&rsquo;n poden afegir de nou
 <p><img src="/images/8acapt.png" alt="Cat"></p>
 <p>A la finestra box ens surten els usuaris que hi ha al domini :</p>
 <p><img src="/images/9acapt.png" alt="Cat"></p>
-<p>-Creació d&rsquo;un nou domini amb curl-</p>
+  <h1>Creació d&rsquo;un nou domini amb curl</h1>
 <p>Fent ús de la demo de poste.io, podem utilitzar l&rsquo;usuari admin que ens proporciona per a crear un nou domini gràcies a RestAPI amb la següent comanda :</p>
 <p>curl -v -k -u <a href="mailto:admin@poste.io">admin@poste.io</a>:admin -d &lsquo;name=jordialonso.org&rsquo; <a href="https://demo.poste.io/admin/api/v1/domains">https://demo.poste.io/admin/api/v1/domains</a></p>
 
