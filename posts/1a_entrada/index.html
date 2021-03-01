@@ -20,14 +20,37 @@
     <h1>Entrada del 2 de març</h1>
     <time datetime="2021-03-01T15:21:52&#43;01:00">March 01, 2021</time>
   </header>
-  <p>Una manera molt ràpida de crear un servidor de correu és gràcies a poste.io./n
-Aquesta web ens ofereix una demo per a fer proves i demés./n
+  <p>-Fent proves-</p>
+<p>Una manera molt ràpida de crear un servidor de correu és gràcies a poste.io.
+Aquesta web ens ofereix una demo per a fer proves i demés.
 Gràcies a aquesta demo som capaços de crear mails i fer diverses proves, encara que sigui de manera temporal :</p>
 <p><img src="/images/1acapt.png" alt="Cat"></p>
 <p>Veiem com és possible rebre missatges desde aquests comptes a el compte de l&rsquo;institut, per exemple</p>
 <p><img src="/images/2acapt.png" alt="Cat"></p>
 <p>Però a l&rsquo;hora de respondre, no deixa, ja que el domini creat no existeix :</p>
 <p><img src="/images/3acapt.png" alt="Cat"></p>
+<p>-Provem a INTE-</p>
+<ol>
+<li>Instal·lem Docker a inte</li>
+<li>Creem un volum, amb la comanda docker volume create. Exemple : docker volume create volum_mail_server</li>
+<li>Engeguem el servei amb la comanda docker run. Exemple : docker run -p 443:443 -e TZ=Europe/Andorra -v volum_mail_server:/data &ndash;name &ldquo;MailSanJorEva&rdquo; -h &ldquo;sanjoreva.io&rdquo; -t analogic/poste.io</li>
+</ol>
+<p>Com es veu, fem ús del servidor de poste.io</p>
+<p>Un cop tenim el contenidor creat, simplement tenim que iniciar-lo amb la comanda docker start + el nom del contenidor</p>
+<p><img src="/images/4acapt.png" alt="Cat"></p>
+<p>Si posem la IP del servidor de correu, que és inte, entrarem a webmail, és a dir, el client, des d&rsquo;on podem accedir amb algun usuari del nostre domini</p>
+<p><img src="/images/5acapt.png" alt="Cat"></p>
+<p>Imatge on es veu que es poden enviar missatges, però que no es pot contestar (com a l&rsquo;exemple de la demo)</p>
+<p><img src="/images/7acapt.png" alt="Cat"></p>
+<p><img src="/images/6acapt.png" alt="Cat"></p>
+<p>També tenim la part d&rsquo;administració, per a gestionar el domini.
+En aquest cas només tenim el compte admin, però se&rsquo;n poden afegir de nous com per exemple el Santos :</p>
+<p><img src="/images/8acapt.png" alt="Cat"></p>
+<p>A la finestra box ens surten els usuaris que hi ha al domini :</p>
+<p><img src="/images/9acapt.png" alt="Cat"></p>
+<p>-Creació d&rsquo;un nou domini amb curl-</p>
+<p>Fent ús de la demo de poste.io, podem utilitzar l&rsquo;usuari admin que ens proporciona per a crear un nou domini gràcies a RestAPI amb la següent comanda :</p>
+<p>curl -v -k -u <a href="mailto:admin@poste.io">admin@poste.io</a>:admin -d &lsquo;name=jordialonso.org&rsquo; <a href="https://demo.poste.io/admin/api/v1/domains">https://demo.poste.io/admin/api/v1/domains</a></p>
 
 </article>
 
