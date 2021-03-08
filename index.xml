@@ -18,7 +18,7 @@
       
       <guid>https://jordialonso-jda.github.io/posts/2aentrada/</guid>
       <description>En aquesta setmana instal·lem un certificat de manera local gràcies a mkcert. És una eina molt senzilla que ens ajuda a crear certificats d&amp;rsquo;una manera molt fàcil. Els passos per poder utilitzar-lo al nostre servidor de correu són els següents :
- Instal·lem Homebrew Instal·lem mkcert Executem mkcert -install per a instal·lar els certificats locals  Després, a poste.io, accedim al menú de System Settings - TLS Certificate i, allà, entrem els certificats on correspon :</description>
+ Instal·lem Homebrew Instal·lem mkcert Executem mkcert -install per a instal·lar els certificats locals  Per a més comoditat, canviem els noms per defecte del certificat i de la clau privada per un noms que defineixin millor el que són, com per exemple cert.</description>
     </item>
     
     <item>
