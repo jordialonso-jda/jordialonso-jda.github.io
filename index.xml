@@ -6,10 +6,20 @@
     <description>Recent content on Blog de servidor de correu de Jordi Alonso</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 01 Mar 2021 15:21:52 +0100</lastBuildDate>
+    <lastBuildDate>Thu, 04 Mar 2021 15:57:00 +0100</lastBuildDate>
     
 	<atom:link href="https://jordialonso-jda.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Entrada del 9 de març</title>
+      <link>https://jordialonso-jda.github.io/posts/2aentrada/</link>
+      <pubDate>Thu, 04 Mar 2021 15:57:00 +0100</pubDate>
+      
+      <guid>https://jordialonso-jda.github.io/posts/2aentrada/</guid>
+      <description>En aquesta setmana instal·lem un certificat de manera local gràcies a mkcert. És una eina molt senzilla que ens ajuda a crear certificats d&amp;rsquo;una manera molt fàcil. Els passos per poder utilitzar-lo al nostre servidor de correu són els següents :
+ Instal·lem Homebrew Instal·lem mkcert Executem mkcert -install per a instal·lar els certificats locals  Després, a poste.io, accedim al menú de System Settings - TLS Certificate i, allà, entrem els certificats on correspon :</description>
+    </item>
     
     <item>
       <title>Entrada del 2 de març</title>
