@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<title>Entrada del 16 de març | Blog de servidor de correu de Jordi Alonso</title>
+<meta charset="utf-8">
+<meta name="generator" content="Hugo 0.74.3" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://jordialonso-jda.github.io/css/index.css">
+<link rel="canonical" href="https://jordialonso-jda.github.io/posts/3aentrada/">
+<link rel="alternate" type="application/rss+xml" href="" title="Blog de servidor de correu de Jordi Alonso">
+
+<header>
+  
+    <a href="https://jordialonso-jda.github.io/" class="title">Blog de servidor de correu de Jordi Alonso</a>
+  
+  
+</header>
+
+<article>
+  <header>
+    <h1>Entrada del 16 de març</h1>
+    <time datetime="2021-03-15T19:00:36&#43;01:00">March 15, 2021</time>
+  </header>
+  <p>Gestió de comptes del domini</p>
+<p>Des del admin de poste.io podem fer múltiples gestions dels comptes del
+domini, com per exemple donar d&rsquo;alta o eliminar comptes. Funcions que
+m&rsquo;han semblat més útils :</p>
+<ul>
+<li>Es pot canviar la mida màxima dels mail que es reben</li>
+<li>Múltiples opcions d&rsquo;eliminació automàtica dels mail</li>
+<li>Filtrate dels correus que es reben i black/whitelist</li>
+<li>Es poden posar fitxers a quarentena, per si son sospitosos</li>
+</ul>
+<p>La funció que més m&rsquo;ha interessat és la de poder canviar les quotes :</p>
+<p><img src="/images/8.png" alt="Cat"></p>
+<p>Enviament de correus entre comptes del propi domini</p>
+<p>Utilitzarem el domini que vé per defecte a les màquines NetinVM, el de
+example.net, per a la creació dels usuaris &ldquo;admin&rdquo; i &ldquo;jordi&rdquo;. Tractarem
+que s&rsquo;enviin correus entre ells.</p>
+<p><img src="/images/1.png" alt="Cat"></p>
+<p>Després de la creació del domini li posem el certificat de mkcert tal com
+vem veure a l&rsquo;entrada anterior.</p>
+<p>Un cop fet això, toca instal·lar un client de correus. En aquest cas,
+escollim el Thunderbird, encara que es poden escollir de molts altres
+com el Geary o Evolution. L&rsquo;instal·lem al client &ldquo;intb&rdquo;.</p>
+<p>Al executar-l&rsquo;ho, ens demanarà que ens loguem, on posem el nostre compte
+i contrasenya.</p>
+<p>Un cop dins, haurem d&rsquo;anar a la pestanya Outgoing Server (SMTP) i dir-li
+al client de correus on té enviar els missatges de correu.</p>
+<p><img src="/images/2.png" alt="Cat"></p>
+<p>Utilitzarem el port 465, que és el que vé per defecte, per indicar el
+protocol SMTP.</p>
+<p>Des de Thunderbird i amb la sessió <a href="mailto:admin@example.net">admin@example.net</a>, escrivim un missatge
+per a <a href="mailto:jordi@example.net">jordi@example.net</a>. Veiem que ens demana contrasenya</p>
+<p><img src="/images/3.png" alt="Cat"></p>
+<p>El veiem a la pestanya Inbox de <a href="mailto:jordi@example.net">jordi@example.net</a> que ha rebut el missatge</p>
+<p><img src="/images/4.png" alt="Cat">
+<img src="/images/5.png" alt="Cat"></p>
+<p>Provem d&rsquo;enviar el missatge des de <a href="mailto:jordi@example.net">jordi@example.net</a> a <a href="mailto:admin@example.net">admin@example.net</a>&hellip;</p>
+<p><img src="/images/6.png" alt="Cat"></p>
+<p>&hellip; Pero no cuela. No hem activat correctament el protocol IMAP4, que
+utilitza el port 143. Otra vez será !</p>
+<p><img src="/images/7.png" alt="Cat"></p>
+
+</article>
+
+
+
+</html>

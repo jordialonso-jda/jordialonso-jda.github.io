@@ -6,10 +6,21 @@
     <description>Recent content on Blog de servidor de correu de Jordi Alonso</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 04 Mar 2021 15:57:00 +0100</lastBuildDate>
+    <lastBuildDate>Mon, 15 Mar 2021 19:00:36 +0100</lastBuildDate>
     
 	<atom:link href="https://jordialonso-jda.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Entrada del 16 de març</title>
+      <link>https://jordialonso-jda.github.io/posts/3aentrada/</link>
+      <pubDate>Mon, 15 Mar 2021 19:00:36 +0100</pubDate>
+      
+      <guid>https://jordialonso-jda.github.io/posts/3aentrada/</guid>
+      <description>Gestió de comptes del domini
+Des del admin de poste.io podem fer múltiples gestions dels comptes del domini, com per exemple donar d&amp;rsquo;alta o eliminar comptes. Funcions que m&amp;rsquo;han semblat més útils :
+ Es pot canviar la mida màxima dels mail que es reben Múltiples opcions d&amp;rsquo;eliminació automàtica dels mail Filtrate dels correus que es reben i black/whitelist Es poden posar fitxers a quarentena, per si son sospitosos  La funció que més m&amp;rsquo;ha interessat és la de poder canviar les quotes :</description>
+    </item>
     
     <item>
       <title>Entrada del 9 de març</title>
